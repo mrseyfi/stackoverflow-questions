@@ -21,16 +21,17 @@ class My_Spider(scrapy.Spider):
         link_list = response.xpath("//a[@class = 's-link']/@href").extract()
 
         tags_list = []
-        print(" ddddddddddddddddd link_list:" + str(len(link_list)))
         for i in range(0, len(link_list)):
             str_tags = ""
             len_tags = len(response.xpath("/html/body/div[3]/div[2]/div[1]/div[3]/div["+ str(i+1) +"]/div[2]/div[2]/div[1]/a"))
-            print(" ddddddddddddddddd len_tags:" + str(len(link_list)))
             for j in range(0, len_tags):
-                str_tags += response.xpath("/html/body/div[3]/div[2]/div[1]/div[3]/div["+ str(i+1) +"]/div[2]/div[2]/div[1]/a[" + str(j+1) + "]/text()").extract()[0]
-                str_tags += " "
+                try:
+                    str_tags += response.xpath("/html/body/div[3]/div[2]/div[1]/div[3]/div["+ str(i+1) +"]/div[2]/div[2]/div[1]/a[" + str(j+1) + "]/text()").extract()[0]
+                except:
+                    "none"
+                finally:
+                    str_tags += " "
             tags_list.append(str_tags)
-            print(" ddddddddddddddddd " + str_tags)
 
         data = {}
         for i in range(0, len(link_list)):
