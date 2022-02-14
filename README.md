@@ -1,14 +1,9 @@
-
 ###########################
 # stackoverflow-questions #
 ###########################
 
-.. image:: https://github.com/dbrgn/django-mathfilters/workflows/CI/badge.svg
-    :alt: Build status
-    :target: https://github.com/mrseyfi/django-mathfilters/actions?query=branch%3Amaster
 
-
-stackoverflow-questions is a Python 3.
+stackoverflow-questions is a Python 3 project.
 
 Installation
 ============
