@@ -28,10 +28,8 @@ Version Support
 This module officially supports Python 3.5+ as well as PyPy3. Support for Python
 3.3 and 3.4 is provided on best-effort basis, but there are no CI tests for it.
 
-Supported Django versions are 1.11+, 2.x and 3.x.
-
 
 License
 =======
 
-`MIT License <http://www.tldrlegal.com/license/mit-license>`_, see LICENSE file.
+`MIT License <http://www.tldrlegal.com/license/mit-license>` , see LICENSE file.
