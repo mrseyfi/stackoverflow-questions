@@ -1,7 +1,4 @@
-###########################
 # stackoverflow-questions #
-###########################
-
 
 stackoverflow-questions is a Python 3 project.
 
